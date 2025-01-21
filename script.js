@@ -21,7 +21,7 @@ function addCandle() {
     candle.classList.add("candle-stick");
 
     // Tentukan pergerakan harga acak
-    let change = Math.random() * 20 - 10; // Perubahan harga antara -10 hingga 10
+    let change = Math.random() * 2 - 1; // Perubahan harga antara -1 hingga 1
     currentPrice += change;
 
     // Tentukan warna candle (hijau jika naik, merah jika turun)
@@ -32,7 +32,7 @@ function addCandle() {
     }
 
     // Tentukan posisi dan tinggi candle
-    let candleHeight = Math.abs(change) * 2; // Sesuaikan tinggi candle dengan perubahan harga
+    let candleHeight = Math.abs(change) * 20; // Sesuaikan tinggi candle dengan perubahan harga
     candle.style.height = candleHeight + "px";
     candle.style.left = candlePosition + "px"; // Posisi horizontal candle
 
@@ -67,4 +67,4 @@ sellButton.addEventListener("click", () => {
 });
 
 // Fungsi untuk menjalankan pergerakan otomatis setiap detik
-setInterval(addCandle, 1000);  // Setiap detik tambahkan candle baru
+setInterval(addCandle, 1000);  // Setiap detik tambahkan candle baru  // Setiap detik tambahkan candle baru
