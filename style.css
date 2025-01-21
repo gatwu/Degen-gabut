@@ -35,3 +35,17 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+/* Penyesuaian untuk perangkat mobile */
+@media (max-width: 600px) {
+    #game-container {
+        padding: 10px;
+    }
+
+    #chart {
+        height: 150px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
