@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    width: 800px;
+    margin: 50px auto;
+}
+
+#candle-stick {
+    width: 20px;
+    height: 200px;
+    background-color: green;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.5s ease-in-out;
+}
+
+#profit {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
